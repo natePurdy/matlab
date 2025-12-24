@@ -1,0 +1,18 @@
+% given a WSS random process's average power
+avgPower_X_t = 1;
+% theta is a random variable with uniform distribution [0,2*pi]
+theta_t = 1/(2*pi); % for 0 < theta < 2*pi
+% X_t and theta_t are independent ie E[X*theta] = 0
+E_X_theta = 0;
+% a) find E[(x(t))^2] (given since average power = expected power)
+
+
+
+% Compute inverse Fourier transform
+x_t = ifourier(avgPower_X_t, f, t);  % using symbolic ifourier
+disp('Inverse Fourier Transform of 1:')
+disp(x_t)
+
+% b) find E[cos(2*pi*f*t+theta)]
+syms f t theta
+E_cos = int(cos(2*pi*f*t + theta), theta, 0, 2*pi)

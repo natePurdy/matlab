@@ -1,0 +1,7 @@
+syms x
+p = x^2 + 1/2*x-1;
+r = root(p,x)
+rVpa= vpa(r)
+rVpa1 = rVpa(1)
+
+

@@ -1,0 +1,50 @@
+% MATLAB Script: PDF of Z = X + Y via convolution of Exponential PDFs
+
+% Parameters
+lambda = 1;
+x = linspace(0, 10, 1000);    % Domain for X and Y
+dx = x(2) - x(1);             % Step size
+
+% Define PDF of X and Y
+pdf_X = lambda * exp(-lambda * x);  % f_X(x)
+pdf_Y = pdf_X;                      % f_Y(y) = f_X(y)
+
+% Compute convolution manually using discrete approximation
+pdf_Z_conv = conv(pdf_X, pdf_Y) * dx;  % Scale by dx for integration
+z = linspace(0, 2*max(x), length(pdf_Z_conv));  % Domain for Z
+
+% True PDF of Z = X + Y (Erlang/Gamma(2,1)) for comparison
+pdf_Z_true = lambda^2 * z .* exp(-lambda * z);
+
+% Plotting
+figure;
+
+% Plot PDF of X
+subplot(3,1,1);
+plot(x, pdf_X, 'b', 'LineWidth', 2);
+title('PDF of X ~ Exponential(\lambda=1)');
+xlabel('x');
+ylabel('f_X(x)');
+grid on;
+
+% Plot PDF of Y
+subplot(3,1,2);
+plot(x, pdf_Y, 'r', 'LineWidth', 2);
+title('PDF of Y ~ Exponential(\lambda=1)');
+xlabel('y');
+ylabel('f_Y(y)');
+grid on;
+
+% Plot PDF of Z via convolution and compare with true
+subplot(3,1,3);
+plot(z, pdf_Z_conv, 'm', 'LineWidth', 2); hold on;
+plot(z, pdf_Z_true, 'k--', 'LineWidth', 1.5);  % Ground truth
+legend('Convolution', 'True PDF');
+title('PDF of Z = X + Y via Convolution');
+xlabel('z');
+ylabel('f_Z(z)');
+grid on;
+
+sgtitle('PDFs of X, Y and Z = X + Y (via convolution)');
+
+

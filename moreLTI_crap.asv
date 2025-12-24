@@ -1,0 +1,19 @@
+% more LTI stuff
+clear; close all;
+syms t b w r c
+
+%%% GIVEN
+% LTI system impulse reponse
+h_t = (1/(r*c))*exp(-t/(r*c));
+h_t = h_t*heaviside(t); % mutliply by step function because its causal!
+% autocorrelation of intput signal
+Rx_t = exp(-b*abs(t));
+
+% find PSD of output and autocorrelation of output, and power of output
+% process
+
+% power spectral density of input
+sx_f = fourier(Rx_t,t,w)
+
+% PSD of output Sy(f) = abs(H(f))^2  *  Sx(f)
+H_f = fourier(h_t, t, w)

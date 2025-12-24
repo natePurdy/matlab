@@ -1,0 +1,36 @@
+% estimate teh power threshold for stimulated brilloin scattering for
+% SMF28.
+% You need to estimate the power threshold for stimulated Brillouin scattering in case of short
+% pulse propagation in SMF28 (fiber specifications are shown below). You can use the formula
+% provided in class which was derived for the CW case but there is a caveat. To apply this formula
+% for short pulses you need to consider the effective length differently. When the pump pulse is
+% launched into the fiber it generates the Brillouin pulse (which carries very little power at first but
+% then grows exponentially, due to the Brillouin gain created by the pump pulse). Since the pump
+% and Brillouin pulses have different wavelengths (the Brillouin shift is ~0.08 nm for pump at 1550
+% nm) they propagate in the fiber with different group velocities (due to dispersion). After some
+% propagation distance (equal to the walk-off length) they will walk-off from each other (in time)
+% and no energy transfer happens anymore. The walk-off length can be considered as the effective
+% length (or the interaction length). You can do the calculation with the assumption that the
+% FWHM input pulse duration is 100 fs (transform-limited), the center wavelength is at 1550 nm.
+% The two pulses are considered not to be overlapped in time if the distance between them equal to
+% or greater than the FWHM duration of the pulse. You can use gB =5*10-11 m/W.
+% SMF28 parameters of interest:
+diameter = 8.3e-6; NZ = 0.13; MFD = 10.4e-6; 
+FWHM_inT = 100e-15; %FWHM of input pulse assumed guassian
+% also the loss at 1550nm
+loss_dB = 0.19; % per km
+dispersion = 17; % dispersion in ps/nm*km
+% dispersion = dispersion * 1e-12 / 1e3;   % s/(nm·m)
+% also the brillouin gain bandwidth
+BGB = 50e6; % 50 MHz
+brillouinShift = 0.08; % nm @ 1550 (given)
+
+% i am guessing we will need to use effective legnth at some point
+attenCoeef = loss_dB/4.343
+Le = (1-exp(-attenCoeff*100))/attenCoeff % not correct
+
+% need to account for walkof length as effective length
+% pulse boradening
+deltaT = dispersion*brillouinShift % in ps/km
+% now solve for L in km
+L_eff = FWHM_inT/(deltaT*1e-12) % convert deltaT to s/m in this calculation fince FWHM is in raw seconds

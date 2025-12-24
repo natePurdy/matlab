@@ -1,0 +1,13 @@
+
+
+% what a sinc function looks like
+
+function [EFieldIntensity_YAxis] = my_sic_func(wavelength_lambda,aperture_distance_across_y,theta)
+    
+    
+    EFieldIntensity_YAxis = sin(3.14159*(aperture_distance_across_y/wavelength_lambda)*sin(theta))/(3.14159*(aperture_distance_across_y/wavelength_lambda)*sin(theta));
+    
+
+    
+
+end

@@ -1,0 +1,34 @@
+clc; clear;
+
+% to calculate the pdf of a random variable when given a guassian random
+% vector, and probabilityies given a vector of interest
+u = [0;0;0]; % mean vector
+c = [1 1/2 1/2; 1/2 1 1/2; 1/2 1/2 1]; % covariance matrix
+a = [1 2 3; 0 1 1 ]; % random variable vector Z
+% any constants?
+b = 0
+% new normal given linear transformation
+newMean = a*u + b
+newCov = a*c*a'    % variance
+
+% what about probability?
+% P(x1-x2-x2 >= 0)
+a = [1 -1 -1];  % a vector comes from P(vector)
+newMean = a*u + b
+newCov = a*c*a'    % variance
+
+mean = newMean;
+stdDev = sqrt(newCov);
+Y = 0;
+z = (Y-mean)/stdDev;   % your z-score
+
+% Right-tail probability P(Z > z)
+disp("Right side tail: P(Z>=z)")
+p_tail = 1 - normcdf(z)
+
+% left sided probability P(Z < z)
+disp("Left side : P(Z<z)")
+p_left = normcdf(z)
+
+disp("Two side tail: P(|Z|>=z):")
+p_tail2 = 2*(1 - normcdf(z))

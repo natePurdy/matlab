@@ -1,0 +1,14 @@
+lambda:,  throughputA:, throughputB, collisionsA, collsionsB: , attemptsToTransmitA, attemptsToTransmitB, Node A Bias backoffRace, Node A Bias runClip:
+100,  9.960896e+05,  9.120821e+05, 4685, 4685, 5515, 5445, NaN, 1.092105e+00
+lambda:,  throughputA:, throughputB, collisionsA, collsionsB: , attemptsToTransmitA, attemptsToTransmitB, Node A Bias backoffRace, Node A Bias runClip:
+200,  9.775718e+05,  9.080023e+05, 4972, 4972, 5787, 5729, NaN, 1.076618e+00
+lambda:,  throughputA:, throughputB, collisionsA, collsionsB: , attemptsToTransmitA, attemptsToTransmitB, Node A Bias backoffRace, Node A Bias runClip:
+300,  9.672048e+05,  9.072045e+05, 4946, 4946, 5752, 5702, NaN, 1.066138e+00
+lambda:,  throughputA:, throughputB, collisionsA, collsionsB: , attemptsToTransmitA, attemptsToTransmitB, Node A Bias backoffRace, Node A Bias runClip:
+400,  9.442584e+05,  8.734690e+05, 4936, 4936, 5723, 5664, NaN, 1.081044e+00
+lambda:,  throughputA:, throughputB, collisionsA, collsionsB: , attemptsToTransmitA, attemptsToTransmitB, Node A Bias backoffRace, Node A Bias runClip:
+500,  9.335094e+05,  8.891138e+05, 4977, 4977, 5755, 5718, NaN, 1.049933e+00
+lambda:,  throughputA:, throughputB, collisionsA, collsionsB: , attemptsToTransmitA, attemptsToTransmitB, Node A Bias backoffRace, Node A Bias runClip:
+800,  9.132676e+05,  9.348692e+05, 4944, 4944, 5705, 5723, NaN, 9.768935e-01
+lambda:,  throughputA:, throughputB, collisionsA, collsionsB: , attemptsToTransmitA, attemptsToTransmitB, Node A Bias backoffRace, Node A Bias runClip:
+1000,  9.370716e+05,  9.454705e+05, 4963, 4963, 5744, 5751, NaN, 9.911168e-01

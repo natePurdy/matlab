@@ -1,0 +1,48 @@
+% build a fiber line
+BW = 40e9; % b/s
+distanceAB = 50e3; % 50 km
+waveL = 1550e-9; % m
+FWHM_inT = 20e-12; % s (20 ps)
+c = 3e8;
+
+% fiber parameters EX2000 ( main line)
+dispersion = 20.4; % ps/nm/km
+attenuation = 0.162; % dB/km
+Aef
+%fiber parameters for compensator line
+dispersionComp = -38.0; % ps/(nm·km)
+
+
+% conversions and calculations
+FWHM_inF = 0.44 / FWHM_inT;                   % Hz
+spectralBroadening = waveL^2 * FWHM_inF / c * 1e9;  % nm
+dispersion = dispersion * 1e-12 / 1e3;         % s/(nm·m)
+pulseBroadening = abs(dispersion) * spectralBroadening * distanceAB;  % s
+
+% output total pulse width (assuming Gaussian)
+FWHM_outT = sqrt(FWHM_inT^2 + pulseBroadening^2);
+
+fprintf('Pulse broadening = %.3e s\n', pulseBroadening);
+fprintf('Output FWHM = %.3e s\n', FWHM_outT);
+
+%how to apply dispersion compensation to the fiber
+% choose a type of dispersion fiber to use and the length needed.
+% compensation fiber: vascade V1000
+% Dispersion compensation fiber (e.g. Vascade V1000)
+dispersionComp = dispersionComp * 1e-12 / 1e3 % s/(nm·m)
+
+% Required compensation length
+distanceToCompensate = - (dispersion * distanceAB) / dispersionComp;
+fprintf('Compensation fiber length = %.2f km\n', distanceToCompensate / 1e3);
+
+% now estimate the threshold power for stimulated raman and brillouin
+% scattering 
+gR = 10^-13; % raman gain @ 1550 nm
+gB = 5*10^-11; % brillouin gain @ 1550 nm, (m/v)
+% first find attenuation coeeficient
+attenCoeff = attenuation/4.343  % magic number comes from solving for attenuation coeefficienct assuming exponential decay function of P2/P1
+% effective length
+Le = (1-exp(-attenCoeff*50))/attenCoeff
+
+% brilloin power threshold
+Pth_brilloin = 21*

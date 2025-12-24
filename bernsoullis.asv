@@ -1,0 +1,21 @@
+%bernoullia
+clear;
+close all;
+n = 50;
+k = 45;
+p = 0.95;
+q = 1-p;
+
+totalP = 0;
+for i=1:k-1
+
+    % for right tail probability
+    totalP = totalP + nchoosek(50,i)*p^i * q^(n-i);
+
+end
+% right tail
+rightTail = 1-totalP
+
+
+% now compare to CLT approximation
+Zscore 

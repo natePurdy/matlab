@@ -1,0 +1,4 @@
+% homeowrk 6 help stats
+Cx = [4 3; 3 9];
+A = [1 -2; 3 4];
+A*Cx*A'

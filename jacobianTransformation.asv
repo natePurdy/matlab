@@ -1,0 +1,49 @@
+%% compute_joint_pdf_ZW.m
+% Computes the joint PDF f_ZW(z,w) of Z = X + Y, W = X - Y
+% for X,Y ~ Uniform(0,1), independent, using Jacobian
+
+clear; clc; close all;
+syms x y z w real
+
+%% Step 1: Define transformation
+z = x + y;
+w = x - y;
+
+
+
+%% Step 2: Compute Jacobian symbolically
+J = jacobian([z, w], [x, y]);   % 2x2 Jacobian matrix
+JacobianDet = abs(det(J));      % absolute value of determinant
+disp('Jacobian determinant |J| =');
+disp(JacobianDet);
+
+%% Step 3: Define joint pdf of X and Y
+fXY = @(x,y) (x>0 & x<1 & y>0 & y<1); % 1 if inside [0,1], 0 otherwise
+
+%% Step 4: Define joint pdf of Z and W numerically
+zvals = linspace(0,2,500);   % Z ranges from 0 to 2
+wvals = linspace(-1,1,500);  % W ranges from -1 to 1
+[Z,W] = meshgrid(zvals,wvals);
+
+X = (Z + W)/2;
+Y = (Z - W)/2;
+
+fZW = zeros(size(Z));
+mask = fXY(X,Y);          % 1 where X,Y in [0,1], 0 elsewhere
+fZW(mask) = double(JacobianDet); % Apply Jacobian
+
+%% Step 5: Plot joint pdf
+figure;
+surf(Z,W,fZW,'EdgeColor','none');
+xlabel('Z = X+Y'); ylabel('W = X-Y'); zlabel('f_{ZW}(z,w)');
+title('Joint PDF f_{ZW}(z,w)');
+colormap turbo; colorbar;
+view(45,30);
+
+%% Step 6: Plot 2D support region
+figure;
+contourf(Z,W,fZW,1,'LineColor','none');
+xlabel('Z'); ylabel('W');
+title('Support region of f_{ZW}(z,w)');
+axis equal tight;
+colormap turbo; colorbar;

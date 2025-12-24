@@ -1,0 +1,36 @@
+%% MATLAB Script: Discrete Rectangular Function and Autocorrelation
+
+clc;
+clear;
+close all;
+
+%% Parameters
+N = 11;              % Length of the rectangular pulse (must be odd for symmetry)
+L = 20;              % Total length of the signal vector
+
+
+%% Define Discrete Rectangular Function
+
+x = zeros(0,L);      % Initialize signal
+x(1:N) = 1;  % Rectangular pulse
+x(N:L) = 0;
+
+%% Plot the Rectangular Function
+figure;
+stem(0:L-1, x, 'filled');
+title('Discrete Rectangular Function');
+xlabel('n');
+ylabel('x[n]');
+grid on;
+
+%% Compute Autocorrelation
+r = xcorr(x);  % Computes autocorrelation
+lags = -(L-1):(L-1);
+
+%% Plot Autocorrelation
+figure;
+stem(lags, r, 'filled');
+title('Autocorrelation of Discrete Rectangular Function');
+xlabel('Lag');
+ylabel('r_{xx}[k]');
+grid on;

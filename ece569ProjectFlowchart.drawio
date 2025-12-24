@@ -1,0 +1,322 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.0.16">
+  <diagram name="Page-1" id="OKM6ghpxG4BhKLCQbini">
+    <mxGraphModel dx="1434" dy="746" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DEL5I9gz2-1W57vb27WF-9" value="&lt;h1&gt;&lt;br&gt;&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="60" y="370" width="610" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-83" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="389" y="513" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-84" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="381" y="518" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-69" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="10" y="200" width="467" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-19" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="522" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-18" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="514" y="405" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-1" value="BEGIN" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="10" y="234" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-2" value="Matlab Data generator (custom .m file)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="150" y="244" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="410" as="sourcePoint" />
+            <mxPoint x="150" y="274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.017;exitY=0.617;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-2" target="DEL5I9gz2-1W57vb27WF-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="410" as="sourcePoint" />
+            <mxPoint x="430" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-7" value="CSVs&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="305" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-7" target="DEL5I9gz2-1W57vb27WF-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="344" y="310" as="sourcePoint" />
+            <mxPoint x="345.9839999999999" y="368.00800000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-11" value="DFT&lt;div&gt;(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;baseline C&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;)&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#0000FF;" parent="1" vertex="1">
+          <mxGeometry x="110" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-14" value="Timing Log File (.txt)" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+          <mxGeometry x="680" y="440" width="80" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-13" value="FFT&lt;div&gt;(custom&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;amp; Optimization #N&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#b85450;fillColor=#f8cecc;" parent="1" vertex="1">
+          <mxGeometry x="507" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.05;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="DEL5I9gz2-1W57vb27WF-11" target="DEL5I9gz2-1W57vb27WF-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="410" as="sourcePoint" />
+            <mxPoint x="450" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="170" y="490" />
+              <mxPoint x="280" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-17" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="557" y="471" as="sourcePoint" />
+            <mxPoint x="557" y="491" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-21" value="&lt;b&gt;Testing Suite (.cu)&lt;/b&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;perimeterSpacing=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="60" y="340" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-22" value="CFAR&lt;br&gt;&lt;div&gt;(C&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap; background-color: transparent;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22baseline%20DFT%26lt%3Bdiv%26gt%3B(non-recursive)%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22shape%3Dparallelogram%3Bperimeter%3DparallelogramPerimeter%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfixedSize%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22220%22%20y%3D%22410%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#0000FF;" parent="1" vertex="1">
+          <mxGeometry x="90" y="522" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-24" value="CFAR&lt;br&gt;&lt;div&gt;(Cuda C &lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap; background-color: transparent;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22baseline%20DFT%26lt%3Bdiv%26gt%3B(non-recursive)%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22shape%3Dparallelogram%3Bperimeter%3DparallelogramPerimeter%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfixedSize%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22220%22%20y%3D%22410%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="375" y="522" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-27" value="DFT&lt;div&gt;(baseline C)&lt;br&gt;&lt;div&gt;(recursive)&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#0000FF;" parent="1" vertex="1">
+          <mxGeometry x="220" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-28" value="FFT&lt;div&gt;(built in cuda)&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="357" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-29" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="411" y="470" as="sourcePoint" />
+            <mxPoint x="411" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-30" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="268" y="470" as="sourcePoint" />
+            <mxPoint x="268" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-32" value="&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;Timing Phase 1&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="574" y="470" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-37" value="Complex Data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="362" y="319" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-40" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-27" target="DEL5I9gz2-1W57vb27WF-22" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="480" as="sourcePoint" />
+            <mxPoint x="270" y="532" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-41" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="502" y="409" as="sourcePoint" />
+            <mxPoint x="522" y="389" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-42" value="&lt;font style=&quot;color: rgb(255, 128, 0);&quot;&gt;Cuda Optimization tests&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;direction=west;" parent="1" vertex="1">
+          <mxGeometry x="534" y="375" width="153" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-44" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-27" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="480" as="sourcePoint" />
+            <mxPoint x="416" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-45" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.592;entryY=0.083;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-28" target="DEL5I9gz2-1W57vb27WF-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="410" as="sourcePoint" />
+            <mxPoint x="440" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="417" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-47" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" source="DEL5I9gz2-1W57vb27WF-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="417" y="410" as="sourcePoint" />
+            <mxPoint x="558" y="522" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="567" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="142" y="370" as="sourcePoint" />
+            <mxPoint x="141" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-50" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="282" y="370" as="sourcePoint" />
+            <mxPoint x="281" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-51" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="434" y="371" as="sourcePoint" />
+            <mxPoint x="433" y="411" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-52" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="371" as="sourcePoint" />
+            <mxPoint x="573" y="411" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-53" value="Threshold Detector&lt;div&gt;(cuda C)&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="427" y="610" width="93" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-54" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-22" target="DEL5I9gz2-1W57vb27WF-65" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="410" as="sourcePoint" />
+            <mxPoint x="450" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="150" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-56" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-24" target="DEL5I9gz2-1W57vb27WF-53" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="257" y="593" as="sourcePoint" />
+            <mxPoint x="340" y="620" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="435" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-58" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.05;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="168" y="582" as="sourcePoint" />
+            <mxPoint x="682" y="602" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="168" y="602" />
+              <mxPoint x="278" y="602" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-60" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="409" y="582" as="sourcePoint" />
+            <mxPoint x="409" y="602" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-62" value="&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;Timing Phase 2&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="575" y="582" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-63" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="640" as="sourcePoint" />
+            <mxPoint x="680" y="640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="562" y="639.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-64" value="&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;Timing Phase 3&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="575" y="619" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-65" value="Threshold Detector&amp;nbsp;&lt;div&gt;(C)&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#0000FF;" parent="1" vertex="1">
+          <mxGeometry x="160" y="610" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-66" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="DEL5I9gz2-1W57vb27WF-65" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="655" as="sourcePoint" />
+            <mxPoint x="680" y="675" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="675" />
+              <mxPoint x="350" y="675" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-67" value="&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;Timing Phase 4&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="575" y="654" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-70" value="Data Generation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="10" y="180" width="103" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-71" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="621" y="230" width="198" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-72" value="Data Presentation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="621" y="210" width="103" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-73" value="Matlab and python figures (custom .m file and .py files) to compare metrics between tests (timing, throughput, etc)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="645" y="254" width="150" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-74" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=north;notch=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="704" y="360" width="12" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-77" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=north;notch=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="716" y="360" width="12" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-78" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=north;notch=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="692" y="360" width="12" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-79" value="Timing Results of different tests" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="728" y="375" width="56" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-85" value="2-Dimensional Complex Data Array" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="88" y="889" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-86" value="Apply row DFT on all rows (slow time) - (and a column if range is wanted for that CPI)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="234" y="886" width="128" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-87" value="Apply CFAR Algorithm to Data&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="387" y="889" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-88" value="Apply Threshold Detection to Data" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="532" y="891" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-89" value="DISPLAY to USER" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="726" y="879" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-90" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-88" target="DEL5I9gz2-1W57vb27WF-89" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="407" y="1008" as="sourcePoint" />
+            <mxPoint x="457" y="958" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-91" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="17" y="918.5" as="sourcePoint" />
+            <mxPoint x="90" y="918.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-92" value="Radar Data Stream" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="8" y="886" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-93" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DEL5I9gz2-1W57vb27WF-85" target="DEL5I9gz2-1W57vb27WF-86" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="407" y="1008" as="sourcePoint" />
+            <mxPoint x="457" y="958" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-95" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="362" y="924" as="sourcePoint" />
+            <mxPoint x="388" y="924" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DEL5I9gz2-1W57vb27WF-96" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="507" y="927" as="sourcePoint" />
+            <mxPoint x="533" y="927" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

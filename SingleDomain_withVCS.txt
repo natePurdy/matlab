@@ -1,0 +1,14 @@
+lambda:,  throughputA:, throughputB, collisions: , Node A Bias backoffRace, Node A Bias runClip:
+100,  1.200983e+06,  1.136194e+06, 7, 1.172414e+00, 1.030896e+00
+lambda:,  throughputA:, throughputB, collisions: , Node A Bias backoffRace, Node A Bias runClip:
+200,  2.304053e+06,  2.401255e+06, 59, 1.090909e+00, 9.975012e-01
+lambda:,  throughputA:, throughputB, collisions: , Node A Bias backoffRace, Node A Bias runClip:
+300,  3.576836e+06,  3.647328e+06, 198, 9.975400e-01, 9.996668e-01
+lambda:,  throughputA:, throughputB, collisions: , Node A Bias backoffRace, Node A Bias runClip:
+400,  4.748154e+06,  4.883641e+06, 745, 9.856762e-01, 9.997501e-01
+lambda:,  throughputA:, throughputB, collisions: , Node A Bias backoffRace, Node A Bias runClip:
+500,  5.038232e+06,  5.317898e+06, 1209, 9.469682e-01, 9.474105e-01
+lambda:,  throughputA:, throughputB, collisions: , Node A Bias backoffRace, Node A Bias runClip:
+800,  5.054610e+06,  5.303165e+06, 1922, 9.528750e-01, 9.531309e-01
+lambda:,  throughputA:, throughputB, collisions: , Node A Bias backoffRace, Node A Bias runClip:
+1000,  5.076258e+06,  5.285545e+06, 2380, 9.602960e-01, 9.604040e-01
