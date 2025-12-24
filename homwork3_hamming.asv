@@ -1,0 +1,89 @@
+% homeowrk 3 problem 1
+close all
+clear
+B = 500e6;
+pwidth = 10*10^(-6);
+c = 3*10^8;
+
+RangeRes = c/(2*B)
+
+tau = 10e-6; %pulse length
+slope = B/tau;
+num_pulses = 1; % one targets
+resolution = 1/(10*B);
+PRT = 0.01; % repeatin
+t_array = 0:resolution:2*tau; % 1 seconds of "viewing"
+noise = 0; % additive noise
+time_delay = 0.0; % no time delay because i dotn care about that right now, not trying to be 100% realistic
+pulse_begin = time_delay; %+ tau/2;
+% Now Generate the signal points
+[x_return, real_part, imag_part, t_array,clean_return] = gen_LFM_at_specific_time(tau, B, num_pulses, t_array, PRT, noise, time_delay, resolution);
+
+% take the FFT of the transmitted signal
+[tx_fft_freqs, tx_fft_amps, tx_fft_phases] = simpleFFT(clean_return,1/resolution);
+
+% put the thing throug a matched filter without a window function
+[output_of_matched_filter1, double_time1] = apply_matched_filter(x_return, clean_return, t_array, resolution, pulse_begin);
+
+figure
+title( "Transmit Signal Characteristics")
+scatter(0:resolution:tau+tau/2,real(clean_return((1:length(0:resolution:tau+tau/2)))),".", "black")
+title("Real valued LFM UpChirp Waveform")
+ylabel("Amplitude")
+xlabel(" Time (s)")
+fontsize( 'increase')
+
+
+% ----------------------------------------------------------------- generate a window function for the pulse
+hamm_length = [0:resolution:tau];
+hamm_window = normpdf(hamm_length,time_delay,0.000005);
+hamm_window_padded = [hamm_window zeros(1,length(tau:resolution:t_array(end)-1*resolution))];
+
+x_return_hamm = x_return.*hamm_window_padded;
+
+
+% now put the hamming windowed function through the matched fiulter
+[output_of_matched_filter_hamm, double_time_hamm] = apply_matched_filter(x_return_hamm, clean_return, t_array, resolution, pulse_begin);
+
+[frq1, amp1, phase1] = simpleFFT(output_of_matched_filter1, 10/resolution);
+[frq_hamm, amp_hamm, phase_hamm] = simpleFFT(output_of_matched_filter_hamm, 10/resolution);
+
+
+% 00000000000000000000000000000000000000000000    PLOTTING STUFFF
+figure
+title( "Hamming")
+axes1 = nexttile;
+scatter(t_array,hamm_window_padded,".", "black")
+title("Hamm Window Function")
+ylabel("Amplitude")
+xlabel(" Time (s)")
+fontsize( 'increase')
+% PLOT THE NON-HAMMED OUTPUT OF THE MATCHED FILTER
+figure
+(double_time1/2,abs(real(output_of_matched_filter1)),"b")
+title("LFM Return Signal After MF")
+ylabel("| Amplitude |")
+xlabel("Time (s)")
+fontsize( 'increase')
+%   PLOT THE HAMMING SIGNAL OUTPUT OF THE MATCHED FILTER
+figure
+plot(double_time_hamm/2,abs(real(output_of_matched_filter_hamm)),"b")
+title("LFM Return Signal After MF with hamming Window")
+ylabel("| Amplitude |")
+xlabel("Time (s)")
+fontsize( 'increase')
+
+% pLOT THE FFT OF THE NON-HAMMED
+figure
+plot(frq1,abs(real(amp1)),"b")
+title("FFT of non-hammed signal through MF")
+ylabel("| Amplitude |")
+xlabel("Freq (Hz)")
+fontsize( 'increase')
+% pLOT THE FFT OF THE HAMMED
+figure
+plot(frq_hamm,abs(real(amp_hamm)),"b")
+title("FFT of HAMMED signal, MF Output")
+ylabel("| Amplitude |")
+xlabel("Freq (Hz)")
+fontsize( 'increase')

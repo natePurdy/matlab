@@ -1,0 +1,44 @@
+% homeowrk 3 textbook problems scratchwork
+
+
+% chapter 3 question 12:
+PRF = 5000; % Hz
+PRT = 1/PRF;
+c = 3e8; % speed of light
+
+% Based on this iformation alone, what is the max unambiguous range in Km?
+deltaR = c*PRT/2
+
+% target located 50 miles from radar, what is apparent range?
+mi_to_km = 1/0.62137119;
+Rkm = 50*mi_to_km
+
+% CH3Q18
+Fradar = 5e9; % Hz
+PRF = 5000; %Hz
+sample_rate = 2e6;
+PRT = 1/PRF;
+range_interval = 30000; % 30 Km
+velocity_interval = 10 % m/s
+
+
+% CH4 Q5
+B = 1e9;
+tau = 20e-6;
+prod = B*tau
+
+rayRes = 1/B
+rayResM = c*rayRes/2
+
+reg_pulse_res = c*tau/2
+
+% CH4 Q7 
+B = 1e6;
+tau = 1e-3
+fdopp = 1e3
+tgt_true = 10000; % true range in meters
+
+% what is the apparent range of tha target?
+t_error = c*tau*fdopp/(2*B)
+
+range_apparent = tgt_true-

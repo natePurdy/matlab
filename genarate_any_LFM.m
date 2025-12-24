@@ -1,0 +1,56 @@
+
+clear 
+close all
+% generate using toolbox
+sLFM = phased.LinearFMWaveform('SweepBandwidth',100,...
+    'OutputFormat','Pulses','SampleRate',1e3,...
+    'PulseWidth',1,'PRF',0.5,'NumPulses',3);
+wav = step(sLFM); % this is the square envelope?
+numpulses = size(wav,1);
+t = [0:(numpulses-1)]/sLFM.SampleRate;
+plot(t,real(wav))
+xlabel('Time ( sec)')
+ylabel('Amplitude')
+
+noise = normrnd(0,1,size(t));
+
+hold on
+res_pulses_w_noise = generate_DISCRETE_LFM_pulse_train(1,100,1000,3,t,2000, noise);
+res_pulses = generate_DISCRETE_LFM_pulse_train(1,100,1000,3,t,2000, 0);
+
+
+scatter(t,real(res_pulses),".","red")
+
+
+
+
+% generate from scratch
+function [res_pulses] = generate_DISCRETE_LFM_pulse_train( tau, B, pulse_dur_ms, num_pulses, t_array, PRT_ms, noise )
+    
+    % THE PURPOS EOF THIS FUNCTION IS TO GENERATE A SPECIFIC LFM PULSE
+    % TRAIN FOR ASSISTING IN ECE538 PROJECT 1, QUESTION 2 AND 2 (MORE SO 3)
+
+    % on time = off time (starting simple, maybe change duty cycle later)
+    pulse_envelope = [ones(1,pulse_dur_ms) zeros(1,length(t_array)-pulse_dur_ms)];
+    % remaining pulses
+    for i=1:num_pulses
+        
+        % generate the new pulse
+        func_temp = pulse_envelope.*exp(1i*pi*(B/tau).*(t_array).*(t_array));
+        func_temp = func_temp + noise;
+        if i < 2
+            res_pulses = func_temp;
+        else
+            % shift over the old pulses to make room for the new one
+            old_pulses = circshift(res_pulses, PRT_ms);
+            % concatenate them, removing the "zero filled portion of the
+            % old pulse after shifting" and replace that with the new pulse
+            res_pulses = [func_temp(1:PRT_ms) old_pulses(PRT_ms:length(old_pulses)-1)]; 
+        end
+    end
+end
+
+
+
+
+

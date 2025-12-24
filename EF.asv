@@ -1,0 +1,27 @@
+
+
+% Waveform Antenna Parameters %
+N = 10;
+d = 0.01;
+lambda = 0.1;
+theta = ar(-1*pi/2:0.01:pi/2);
+
+theta_naught =-pi/4;
+e_naught = 1;
+j = sqrt(-1);
+E = 0;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% electric field intensity equation
+E = abs(sin(N*(pi*d/lambda).*(sin(theta)-sin(theta_naught)))./ ...
+    sin(pi*d/lambda).*(sin(theta)-sin(theta_naught)))
+
+% convert to degrees for plotting
+theta = theta.*180/pi;
+figure
+surf(theta,theta,E)
+title('Electric Field Intensity |E(theta)| ')
+
+zlabel('|E|')
+xlabel('Angle off Boresight x')
+ylabel('Angle off Boresight y')

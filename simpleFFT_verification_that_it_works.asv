@@ -1,0 +1,11 @@
+% i dont trust anything
+
+tau = 0.001;
+B = 100000;
+PRT_ms = 0.01;
+num_pulses = 1;
+t_array = -1:0.001:1;
+
+
+
+signal_1 = generate_DISCRETE_LFM_pulse( tau, B, pulse_dur_ms, num_pulses, t_array, PRT_ms, noise );
