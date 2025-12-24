@@ -1,0 +1,46 @@
+%the purpose of this proram is to generate a double sideband with carrier
+%amplitude modulated signal and display the time and frequency plots \
+
+%first generate a time vector of N discrete times
+
+N = 159;
+dt = 0.0001*2*pi;
+t = dt*(1:N);
+%now we need to generate the message signal m(t) = 3*sin(500*t)
+m = 3*sin(500*t);
+%now display the message signal 
+subplot(2,2,1), plot(t,m), title('The massage signal m(t)'),grid
+%then generate the carrier signal 
+c = 1*cos(1500*t);
+%now generate the amplitude modulated signal x(t) = [1+km(t)]*c(t) using a
+%moudlation index of ka = 0.3
+ka = 0.3;
+x = (1+ka*m).*c;
+%now plot the DSB/WC-AM signal 
+subplot(2,2,2), plot(t,x), title('DSB/WC-AM Signal'),grid
+%now use the fft function to approximate the fourier transform of the
+%signals
+Mw = fft(m);
+Cw = fft(c);
+Xw = fft(x);
+
+%now generat the frequency vector
+limw = 20;
+w = 2*pi*(0:2*limw)/(N*dt);
+% prepare the frequnecy spectra data for plotting (the magnatude is
+% adjusted to approximate the weight of the impulses in the fourier
+% transform.
+M = zeros(size(w));
+X = zeros(size(x));
+for n = 1:length(w)
+    M(n) = 2/N*pi*abs(Mw(n));
+   
+    X(n) = 2/N*pi*abs(Xw(n));
+end
+
+%display the mmagnitude frequency spectrum of m(t)
+subplot(2,2,3), stem(w,M), xlabel('frequency spectrum of m(t)'),grid
+%display the magnitude frequency spectrum pf x(t)
+subplot(2,2,4),stem(w,X(1:41)),xlabel('frequency spectrum, of x(t)'),grid
+    
+
